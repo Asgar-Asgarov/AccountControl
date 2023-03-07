@@ -18711,6 +18711,11 @@
   "RootNamespace": "WebApplication1",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\User\\Desktop\\backend projects\\FronToBack\\WebApplication1\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\User\\Desktop\\backend projects\\FronToBack\\WebApplication1\\Areas\\AdminArea\\Views\\Slider\\Create.cshtml",
       "TargetPath": "Areas\\AdminArea\\Views\\Slider\\Create.cshtml",
       "FileKind": "mvc"

@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using WebApplication1.Models;
 using WebApplication1.Models.Demo;
 using WebApplication1.Models.Footer;
 
 namespace WebApplication1.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
