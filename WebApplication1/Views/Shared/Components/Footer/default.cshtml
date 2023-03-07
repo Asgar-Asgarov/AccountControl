@@ -1,0 +1,69 @@
+﻿@model FooterViewModel
+<footer>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <h6>CUSTOMER SERVICE</h6>
+                        <ul class="list-unstyled mt-4">
+                            @foreach(var custServ in Model.CustomerServices ){
+                            <li><a class="text-black-50" href="">@custServ.Name</a></li>
+                            }
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <h6>COMPANY</h6>
+                        <ul class="list-unstyled mt-4">
+                            @foreach (var company in Model.Companies)
+                            {
+                                <li><a class="text-black-50" href="">@company.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <h6>SOCIAL MEDIA</h6>
+                        <ul class="list-unstyled mt-4">
+                            @foreach (var socialMedia in Model.SocialMedias)
+                            {
+                                   <li><a class="text-black-50" href="">@socialMedia.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <h6>ARCHIVE</h6>
+                        <ul class="list-unstyled mt-4">
+                            @foreach (var archive in Model.Archives)
+                            {
+                                 <li><a class="text-black-50" href="">@archive.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row py-2">
+                <div class=" col-lg-4 text-center text-lg-left">
+                    <p class="text-black-50">Powered by <a class="author text-muted"
+                            href="https://www.bakhtiyar.az">Bakhtiyar Shamilzada</a> 2020</p>
+                </div>
+                <div class=" col-lg-4 text-center">
+                    <img src="~/img/footer-bottom-1.png" class="fluid" alt="">
+                </div>
+                <div class=" col-lg-4 text-center text-lg-right mt-3 mt-lg-0">
+                    <a class="text-black-50 mr-5"
+                        href="https://www.linkedin.com/in/bakhtiyar-shamilzada-145159185/">LINKEDIN</a
+                        class="text-black-50">
+                    <a class="text-black-50" href="https://www.facebook.com/shamilzada.bakhtiyar">FACEBOOK</a>
+                </div>
+            </div>
+        </div>
+    </footer>

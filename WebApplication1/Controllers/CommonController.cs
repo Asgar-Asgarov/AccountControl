@@ -1,0 +1,28 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using WebApplication1.DAL;
+
+namespace WebApplication1.Controllers
+{
+    public class CommonController : Controller
+    {
+        private readonly AppDbContext _appDbContext;
+
+        public CommonController(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
+        public IActionResult Search(string search)
+        {
+            var products =_appDbContext.Products
+                .Where(p=>p.Name
+                .ToLower()
+                .Contains(search
+                .ToLower()))
+                .Take(2)
+                .OrderByDescending(p=>p.Id)
+                .ToList();
+            return PartialView("_SearchPartial",products);
+        }
+    }
+}

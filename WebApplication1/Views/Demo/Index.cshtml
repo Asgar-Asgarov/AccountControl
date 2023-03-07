@@ -1,0 +1,23 @@
+﻿@using WebApplication1.Models.Demo
+@model List<Book>
+
+        @foreach (var book in Model)
+        {
+            <p>Book name:@book.Name</p>
+            @foreach (var image in book.BookImages)
+            {
+                <span>Image: @image.ImageUrl</span>
+            }
+            @foreach (var bookGenre in book.BookGenres)
+            {
+                <p>@bookGenre.Genre.Name</p>
+                        
+            }
+            @foreach (var bookAuthor in book.BookAuthors)
+            {
+                    <p>Author:@bookAuthor.Author.Name</p>
+                    <p>Facebook:@bookAuthor.Author.SocialPage.Instagram</p>
+                    <p>Facebook:@bookAuthor.Author.SocialPage.Facebook</p>
+
+            }
+        }
