@@ -115,7 +115,7 @@ namespace WebApplication1.Areas.AdminArea.Controllers
                         ModelState.AddModelError("Photo", "only image");
                         return View();
                     }
-                    if (photo.CheckImageSize(500))
+                    if (photo.CheckImageSize(1000))
                     {
                         ModelState.AddModelError("Photo", "Olcusu boyukdur");
                         return View();

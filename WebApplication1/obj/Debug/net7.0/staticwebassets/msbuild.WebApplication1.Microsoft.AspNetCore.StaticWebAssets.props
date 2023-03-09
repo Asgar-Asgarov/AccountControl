@@ -2176,6 +2176,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\8e33d383-59cf-4321-b977-3874b85aa571(1920x1080) The dokkaebi wallpaper i wanted was for the phone so i made it not for the phone.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\a2acbaf4-e858-4cd3-960f-3b2596db93ecthanksgiving-cactus-care-guide-5199419-hero-78a44308e21d40efa9b2f02dceabe8d3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication1</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication1</BasePath>
+      <RelativePath>img/a2acbaf4-e858-4cd3-960f-3b2596db93ecthanksgiving-cactus-care-guide-5199419-hero-78a44308e21d40efa9b2f02dceabe8d3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\a2acbaf4-e858-4cd3-960f-3b2596db93ecthanksgiving-cactus-care-guide-5199419-hero-78a44308e21d40efa9b2f02dceabe8d3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\b7126500-6c66-4646-848c-e4ee89a6356f(1920x1080) The dokkaebi wallpaper i wanted was for the phone so i made it not for the phone.png))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication1</SourceId>
