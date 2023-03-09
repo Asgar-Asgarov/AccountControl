@@ -38,7 +38,7 @@ public class AccountController:Controller
             }
             return View(register);
         }
-        return View();
+        return RedirectToAction("index","home");
     }
 
     public IActionResult Login()
