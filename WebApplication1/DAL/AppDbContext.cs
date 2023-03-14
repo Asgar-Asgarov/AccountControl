@@ -19,6 +19,9 @@ namespace WebApplication1.DAL
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Bio> Bios { get; set; }
+        public DbSet<Sales> Sales { get; set; }
+        public DbSet<SalesProducts> SalesProducts { get; set; }
+
 
         //Demo
         public DbSet<Book> Books { get; set; }
