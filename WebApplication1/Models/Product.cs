@@ -10,8 +10,9 @@
         public int CategoryId { get; set; }
 
         public Category? Category { get; set; }
-
+        public int Count { get; set; }
         public List<ProductImage>? ProductImages { get; set; }
+        public List<SalesProducts>? SalesProducts { get; set; }
         
     }
 }
